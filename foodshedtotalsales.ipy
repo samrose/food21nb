@@ -1,0 +1,56 @@
+# coding: utf-8
+import pandas as pd
+df = pd.read_csv("food-company-database-ny-pa-oh-wv.csv")
+df
+df = pd.read_csv('food-company-database-ny-pa-oh-wv.csv',header=[4])
+df
+df["Number of Employees"]
+df["Number of Employees"].sum()
+exmployees = df["Number of Employees"].sum()
+employees = df["Number of Employees"].sum()
+employees * 170000 
+employees * 200000
+df[df["Company Name"].str.contains("istrib")]
+df[df["Company Name"].str.contains("istrib")]
+df[df["Company Name"].str.contains("istrib")]
+employees * 170000 
+mfdistsales = employees * 200000
+mfdistsales
+mfdistsales + 940814000
+pamfdistsales + 940814000
+pacropsales = 940814000
+pacropsales
+ohcropsales = 1938334000
+mfdistsales
+mfdistsales = employees * 200000
+mfdistsales
+employees
+wvcropsales = 88492000
+vacropsales = 29058000
+mdcropsales = 116960000
+mdcropsales = 116960000
+nycropsales = 155110000
+mfdistsales + pacropsales + ohcropsales + mdcropsales + vacropsales + nycropsales + wvcropsales
+pacropsales + ohcropsales + mdcropsales + vacropsales + nycropsales + wvcropsales
+totalcropsales = pacropsales + ohcropsales + mdcropsales + vacropsales + nycropsales + wvcropsales
+totalcropsales
+mfdistsales
+wvanimalsales = 466660000
+wvanimalsales
+vanimalsales = 136046000
+mfdistsales = employees * 170000
+mfdistsales
+panimalsales = 1838877000
+ohanimalsales = 1728450000
+ohcropsales = 2132132000
+ohcropsales
+totalcropsales = pacropsales + ohcropsales + mdcropsales + vacropsales + nycropsales + wvcropsales
+totalcropsales
+ohcropsales
+ohanimalsales
+mdanimalsales = 201547000
+nyanimalsales = 230242000
+totalanimalsales = wvanimalsales + vanimalsales + ohanimalsales + panimalsales + mdanimalsales + nyanimalsales
+totalanimalsales
+mfdistsales + totalcropsales + totalanimalsales
+%save -r foodshedtotal 1-999999

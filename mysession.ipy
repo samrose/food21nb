@@ -1,0 +1,42 @@
+# coding: utf-8
+df = pd.read_csv('allegheny_retail_beta.csv')
+import pandas as pd
+df = pd.read_csv('allegheny_retail_beta.csv')
+for i in range(len(df)):
+    df.iloc[i]
+    
+for i in range(len(df)):
+    print(df.iloc[i])
+    
+    
+for i in range(len(df)):
+    print(df.iloc[i]['Name])
+
+    
+    
+for i in range(len(df)):
+    print(df.iloc[i]['Name'])
+    
+
+    
+    
+df = pd.read_csv('fastfoodalleghenycountyupdatexy2.csv')
+inzips = df[df['Zip'].isin(['15211','15260','15213','15216','15226','15228','15243','15234'])]
+inzips = df[df['Zip Code'].isin(['15211','15260','15213','15216','15226','15228','15243','15234'])]
+df.header()
+df.head()
+df[0]
+for col in df.columns:
+    print(col)
+    
+inzips = df[df['ZIP Code'].isin(['15211','15260','15213','15216','15226','15228','15243','15234'])]
+inzips
+df.to_csv('fastfood_fai_beta.csv')
+inzips.to_csv('fastfood_fai_beta.csv')
+df = pd.read_csv('growpghgardens201712.csv')
+inzips = df[df['ZIP Code'].isin(['15211','15260','15213','15216','15226','15228','15243','15234'])]
+inzips = df[df['zip_code'].isin(['15211','15260','15213','15216','15226','15228','15243','15234'])]
+inzips
+inzips.to_csv('growpghgardens_fai_beta.csv')
+history
+%save -r mysession 1-999999

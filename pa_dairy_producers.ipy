@@ -1,0 +1,12 @@
+# coding: utf-8
+%load pa_dairy_producers.ipy
+# %load pa_dairy_producers.ipy
+import pandas as pd
+df = pd.read_csv('pa_craft.csv')
+df = pd.read_csv('CRAFTdb/PAProducers.csv')
+df
+dairy = df.loc[(df['Dairy'] == "x")]
+dairy
+dairy.to_csv('pa_dairy_producers.csv')
+%save pa_dairy_producers
+%save -r pa_dairy_producers 1-99999

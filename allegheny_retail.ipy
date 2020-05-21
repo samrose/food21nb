@@ -1,0 +1,6 @@
+# coding: utf-8
+import pandas as pd
+df = pd.read_csv('allegheny_county_retail_food/data-conveniencesupermarkets.csv')
+inzips = df[df['Zip'].isin(['15211','15260','15213','15216','15226','15228','15243','15234'])]
+inzips.to_csv('allegheny_retail_beta.csv')
+%save -r allegheny_retail 1-999999

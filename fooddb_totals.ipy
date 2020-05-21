@@ -1,0 +1,67 @@
+# coding: utf-8
+import pandas as pd
+df = pd.read_csv('food-company-database-ny-pa-oh-wv.csv')
+counties = ['CHAUTAUQUA','CATTARAUGUS','Erie']
+counties = counties.title()
+counties = [a.title() for a in counties]
+counties
+nycounties = [a.title() for a in counties]
+nycount = df.loc[df['County'].isin(nycounties) & df['State'] == 'NY']
+df
+df = pd.read_csv('food-company-database-ny-pa-oh-wv.csv',header=3)
+df
+nycount = df.loc[df['County'].isin(nycounties) & df['State'] == 'NY']
+df = pd.read_csv('food-company-database-ny-pa-oh-wv.csv',header=[3])
+nycount = df.loc[df['County'].isin(nycounties) & df['State'] == 'NY']
+df['County']
+df
+df = pd.read_csv('food-company-database-ny-pa-oh-wv.csv')
+df
+df = pd.read_csv('food-company-database-ny-pa-oh-wv.csv')
+df
+df = pd.read_csv('food-company-database-ny-pa-oh-wv.csv')
+df
+df['County']
+df = pd.read_csv('food-company-database-ny-pa-oh-wv.csv',header=[3])
+df
+df.header()
+df.header
+df.head()
+df[0]
+df
+df['0']
+df[1]
+for col in df.columns
+for col in df.columns:
+    print(col)
+    
+df = pd.read_csv('food-company-database-ny-pa-oh-wv.csv',header=[4])
+df
+df[0]
+df['County']
+nycount = df.loc[df['County'].isin(nycounties) & df['State'] == 'NY']
+nycount
+nycounties
+nycount = df.loc[df['County'].isin(nycounties) & df['State'] == "NY"]
+nycount = df.loc[df['County'].isin(nycounties) & df['State'].isin("NY")]
+nycount = df.loc[df['County'].isin(nycounties) & df['State'].isin(["NY"])]
+nycount
+count(nycount)
+nycount.count
+ohcounties = ['BELMONT','CARROLL','COLUMBIANA','HARRISON','JEFFERSON','MAHONING','MONROE','TRUMBULL','ASHTABULA','GEAUGA','GUERNSEY','NOBLE','PORTAGE','STARK','SUMMIT','TUSCARAWAS','WASHINGTON']
+ohcounties = [a.title() for a in ohcounties]
+ohcounties
+ohcount = df.loc[df['County'].isin(ohcounties) & df['State'].isin(["OH"])]
+ohcount.count
+pacounties = ['ALLEGHENY','ARMSTRONG','BEAVER','BEDFORD','BLAIR','BUTLER','CAMBRIA','CENTRE','CLARION','CLEARFIELD','CRAWFORD','ELK','FAYETTE','FOREST','FRANKLIN','FULTON','GREENE','HUNTINGDON','INDIANA','JEFFERSON','LAWRENCE','MERCER','MIFFLIN','SOMERSET','VENANGO','WASHINGTON','WESTMORELAND','ADAMS','CAMERON','CLINTON','CUMBERLAND','ERIE','JUNIATA','MCKEAN','PERRY','WARREN']
+pacounties = [a.title() for a in pacounties]
+pacounties
+pacount = df.loc[df['County'].isin(pacounties) & df['State'].isin(["PA"])]
+pacount.count
+wvcounties = ['BARBOUR','BERKELEY','BROOKE','DODDRIDGE','GRANT','HAMPSHIRE','HANCOCK','HARDY','HARRISON','LEWIS','MARION','MARSHALL','MINERAL','MONONGALIA','MORGAN','OHIO','PLEASANTS','PRESTON','TAYLOR','TUCKER','TYLER','WETZEL','GILMER','JEFFERSON','PENDLETON','RANDOLPH','RITCHIE','UPSHUR']
+wvcounties = [a.title() for a in wvcounties]
+wvcounties
+wvcount = df.loc[df['County'].isin(wvcounties) & df['State'].isin(["WV"])]
+wvcount.count
+153 + 407 + 784 + 89
+%save -r fooddb_totals 1-999999 

@@ -1,0 +1,9 @@
+# coding: utf-8
+import pandas as pd
+df = pd.read_csv('FAFdata_74.199.45.13520200521094330.csv')
+df = pd.read_csv('FAFdata_74.199.45.13520200521094330.csv')
+withinfsimports = df[df['DMS ORIG'].isin(['Pennsylvania','Ohio']) & df['DMS DEST'].isin(['Pennsylvania','Ohio']) & df['DMS_MODE'].isin(['Truck']) & df['SCTG2'].isin(['Live animals/fish','Cereal grains','Other ag prods.','Animal feed','Meat/seafood','Milled grain prods.','Other foodstuffs','Alcoholic beverages','Fertilizers'])]
+withinfsimports.to_csv('withinfsfreight.csv')
+imports = df[~df['DMS ORIG'].isin(['Pennsylvania','Ohio']) & df['DMS DEST'].isin(['Pennsylvania','Ohio']) & df['DIST_BAND'].isin(['1,000 - 1,499','1,500 - 2,000','Over 2,000']) & df['DMS_MODE'].isin(['Truck']) & df['SCTG2'].isin(['Live animals/fish','Cereal grains','Other ag prods.','Animal feed','Meat/seafood','Milled grain prods.','Other foodstuffs','Alcoholic beverages','Fertilizers'])]
+imports.to_csv('paohimports.csv')
+%save -r infoodshedandimports 1-999999
